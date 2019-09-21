@@ -1,2 +1,3 @@
-# Responsive-Portfolio
-This is an copy of my basic portfolio project updated to be media responsive
+# Basic-Portfolio
+Portfolio for Gabe Pettus
+Created Initially to pratice basic skills and to showcase growth.
