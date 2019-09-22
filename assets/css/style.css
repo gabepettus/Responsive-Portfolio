@@ -224,7 +224,7 @@ input {
 @media (max-width: 980px) {
   .heading-context-position,
   .container {
-    width: 500px;
+    width: 520px;
     /* removes paddding on either side */
     padding-left: 0;
     padding-right: 0;
@@ -260,7 +260,7 @@ input {
   }
 
   .heading-content-position {
-    width: 100%;
+    width: 95%;
   }
 
   .heading-name {
@@ -297,4 +297,24 @@ input {
   .heading-content-position {
     width: 100%;
   }
+  
+  .product {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 2px;
+    margin: 0;
+  }
+
+  .product-label {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 20px;
+  background-color: #4aaaa5;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
 }
