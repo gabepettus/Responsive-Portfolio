@@ -65,21 +65,21 @@ p {
 
 .heading-menu {
   /* pushes element content to the left */
-  float: right;
-  font-size:20px;
+  font-size: 20px;
   padding-top: 20px;
+  float: right;
 }
   
 /* Style the anchors inside the navigation bar */
 .heading-menu a {
   /* pushes text to center of header */
   margin-top: 20px;
-  padding: 0px 5px;
+  padding: 5px;
 
   /* text formating */
   /* prevents links from being underlined */
   text-decoration: none;
-  text-align: center;
+  /* text-align: center; */
   color: #777;
 }
 
@@ -122,9 +122,17 @@ p {
   float: left;
   border-top: solid;
   border-color: #ccc;
-  width: 100%;
-  margin: 3px;
+  width: 90%;
+  margin:20px;
 }
+
+.content-heading {
+  color: #4Caba2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin: 10px 20px;
+}
+
 
 #bio-image {
   float: left;
@@ -148,7 +156,7 @@ input {
 
 /* TODO need to fix height on textarea */
 .textarea-wrapper {
-  width: 920px; 
+  width: 100%; 
   height: 100px;
   bottom: 0;
 }
@@ -211,3 +219,82 @@ input {
 }
 
 /* Ends Definitions for footer page content styles */
+
+/* Start Media Query section to make pages responsive to different browser sizes */
+@media (max-width: 980px) {
+  .heading-context-position,
+  .container {
+    width: 500px;
+    /* removes paddding on either side */
+    padding-left: 0;
+    padding-right: 0;
+  }
+   
+  .container {
+    align-self: unset;
+    margin-left: 100px;
+  }
+
+  .heading-content-position {
+    width: 100%;
+
+  }
+
+  .heading-name {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-context-position,
+  .container {
+    width: 95%;
+    /* removes paddding on either side */
+    padding-left: 0;
+    padding-right: 0;
+  }
+   
+  .container {
+    align-self: unset;
+    margin-left: 2%;
+  }
+
+  .heading-content-position {
+    width: 100%;
+  }
+
+  .heading-name {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    align-self: center;
+    margin: 2%;
+  }
+
+  .heading-name {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .heading-menu {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .heading-context-position,
+  .container {
+    /* removes paddding on either side */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .heading-content-position {
+    width: 100%;
+  }
+}
