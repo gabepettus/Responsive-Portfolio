@@ -229,15 +229,16 @@ input {
     padding-left: 0;
     padding-right: 0;
   }
-   
+  
   .container {
+    /*  unset removes the center so that it can be off center */
     align-self: unset;
+    /* used to align with brand tag */
     margin-left: 100px;
   }
 
   .heading-content-position {
     width: 100%;
-
   }
 
   .heading-name {
@@ -256,7 +257,6 @@ input {
     align-self: unset;
     margin-left: 2%;
   }
-
 
   .heading-name {
     margin-left: 2%;
